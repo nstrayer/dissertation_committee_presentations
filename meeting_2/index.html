@@ -63,11 +63,22 @@ __Timeline__
 .pull-left[
 ### SBMs
 
+- Cluster network data
+- Flexible in format ({bi, tri, ...}-partite networks)
+- Interpretable
+
 ]
 
 .pull-right[
-### Cosensus Clustering
+### Consensus Clustering
+
+- Recognizes that many clusterings may fit data
+- Reduce data to pairwise "probability of being in same cluster" distances
 ]
+
+### C-SBM
+- Use posterior to quickly sample lots of potential partitionings
+- Consensus clustering provides window to view super high-dimensional results
 
 ---
 class: middle, center
@@ -80,31 +91,108 @@ class: middle, center
 
 ## What does this contribute?
 
+.pull-left[
+- Statistically principled method of clustering data that defies common probability functions 
+]
+
+.pull-right[
+_What is the distribution of an entire genome or phenome?_
+]
+
+
+.pull-left[
+- A new way of looking at the results of bayesian SBMs
+]
+.pull-right[
+_Previous results either ignored or used summary stats_
+]
+
+  
+.pull-left[
+- An easy jumping off point for specialization into more specialized methods
+]
+.pull-right[
+_Polypartite specialization, Time-dependent, ..._
+]
+
+
 ---
 
 ## How can it be expanded?
 
+- Polypartite specialization
+  - Placing restrictions on connection behavior can greatly increase the models power to resolve structure
+  - `sbmR` package has functionality in to define complex relationships between node types that I am not aware of other solutions offering
+  - E.g. __Genotype__ `\(\to\)` __Patient__ `\(\leftarrow\)` __Phenotype__ 
+  
+- Multiple edge types
+  - What if the "network" has different edge types? 
+  - E.g. ICD9 counts and protein fold changes
+  - SBM fitting protocols could be modified to deal with this
+  
+  
+- Time dependence
+  - How to comorbidities or protein pathways change over time?
+  - Clusters remain the same, edge propensities change. 
+  - See [Role Detection in Bicycle-Sharing Networks Using Multilayer Stochastic Block Models](https://arxiv.org/abs/1908.09440) by Carlen Et Al
+  
+
+  
+
 ---
 
 ## Potential journals
+
+- Nature Methods
+- American Statistician
+- Bioinformatics
+- ...?
+
 
 ---
 
 
 # Paper \# 3: sbmR: An R package for fast and robust fitting and investigating SBM models in R.
 
+- Package Website Screenshot
 
 ---
 
 ## Effort report
 
+- [1,100+ commits](https://github.com/nstrayer/sbmR/commits/master)
+- 842 Unit tests
+  - [171 R tests](https://github.com/nstrayer/sbmR/tree/master/tests/testthat)
+  - [671 C++ tests](https://github.com/nstrayer/sbmR/tree/master/src/cpp_tests)
+- [33 fully documented functions](http://nickstrayer.me/sbmR/reference/index.html)
+- [1 package website](http://nickstrayer.me/sbmR)
+- 2 invited conference presentations
+
+
 ---
 
 ## Features beyond consensus SBMs
 
+.pull-left[
+#### [New more efficient agglomerative merging technique](http://nickstrayer.me/sbmR/articles/agglomerative_merging.html)
+- Cuts runtime of original algorithm down by roughly a factor of `N`
+- Demos of superior performance in package vignettes
+]
+
+.pull-right[
+#### Advanced node and edge type specification
+- No other package that I am aware of does this
+- Enables semi-supervised approaches etc. 
+]
+  
+
+
 ---
 
 ## Potential journals
+
+- R Journal
+- Bioinfomatics (application note)
 
 ---
 
@@ -141,7 +229,7 @@ class: middle, center
 &gt; Yaomin quote about ambition
 
 
-- Slow review
+- Slow reviews
 - Long edits
 - Collaboration work
 
