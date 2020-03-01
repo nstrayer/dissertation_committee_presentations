@@ -1,0 +1,150 @@
+---
+title: "Committee Meeting #2"
+author: "Nick Strayer"
+institute: "Vanderbilt Biostatistics Department"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "styles.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      beforeInit: "macros.js"
+      slideNumberFormat: "#%current% of %total%"
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Layout
+
+![:space 4]
+
+__Final paper plan__ 
+- First paper
+- Second paper
+- Third Paper
+
+![:space 4]
+
+__After graduation plans__
+
+
+![:space 4]
+
+__Timeline__
+- The goal
+- Potential challenges
+- Why this timeline
+ 
+
+
+---
+
+# Paper \#1: Phewas ME (Submitted to Bioinformatics)
+
+- Photo of paper in "final format"
+- Photo of submission confirmation
+- Photo of email from researcher using 
+- Photo of presentation at RStudio conference
+
+---
+
+# Paper \#2: Consensus SBM: An uncertainty aware network clustering method
+
+
+.pull-left[
+### SBMs
+
+]
+
+.pull-right[
+### Cosensus Clustering
+]
+
+---
+class: middle, center
+
+## Performance on simulated data
+
+### [`sbmR` Vignette](http://nickstrayer.me/sbmR/articles/sampling_from_posterior.html)
+
+---
+
+## What does this contribute?
+
+---
+
+## How can it be expanded?
+
+---
+
+## Potential journals
+
+---
+
+
+# Paper \# 3: sbmR: An R package for fast and robust fitting and investigating SBM models in R.
+
+
+---
+
+## Effort report
+
+---
+
+## Features beyond consensus SBMs
+
+---
+
+## Potential journals
+
+---
+
+# After graduation plans
+
+.pull-left[
+## Hopkins Postdoc
+]
+
+.pull-right[
+## Hopkins Data Scientist
+]
+
+
+.pull-left[
+## LA Times Data Scientist
+]
+
+.pull-right[
+## Other places to consider?
+]
+
+---
+
+# Timeline
+
+- Timeline plot
+
+
+
+---
+# Potential challenges
+
+> Yaomin quote about ambition
+
+
+- Slow review
+- Long edits
+- Collaboration work
+
+
+---
+# Why this timeline
+
+- Sarah graduation timeline
+- Job opening/acceptance times
