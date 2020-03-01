@@ -49,3 +49,41 @@ h1, h2, h3 {
   float: right;
   padding-left: 1%;
 }
+
+
+.sidenote-bullet {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+    --gap-size: 2rem;
+    grid-column-gap: var(--gap-size);
+}
+
+.sidenote-bullet>p {
+  display: block;
+  position: relative;
+}
+
+.sidenote-bullet>p:first-child {
+    text-align: right;
+}
+
+.sidenote-bullet>p:last-child {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.sidenote-bullet > p:first-child::after {
+    content: "-";
+    text-align: center;
+    font-size: 1.5em;
+    color: grey;
+    width: var(--gap-size);
+    height: 1em;
+    position: absolute;
+    right: -var(--gap-size);
+    top: 0;
+}
+
+
+
