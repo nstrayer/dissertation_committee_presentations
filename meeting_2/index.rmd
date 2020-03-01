@@ -24,24 +24,39 @@ options(htmltools.dir.version = FALSE)
 
 ![:space 4]
 
-__Final paper plan__ 
+.side-bullet.middle[
+
+### Final paper plan
+
 - First paper
 - Second paper
 - Third Paper
 
-![:space 4]
-
-__After graduation plans__
+]
 
 
 ![:space 4]
 
-__Timeline__
+.side-bullet.middle[
+
+### After graduation plans
+
+
+]
+
+![:space 4]
+
+
+.side-bullet.middle[
+
+### Timeline
+
+
 - The goal
 - Potential challenges
 - Why this timeline
  
-
+]
 
 ---
 
@@ -91,7 +106,7 @@ class: middle, center
 
 ![:space 8]
 
-.sidenote-bullet[
+.side-bullet[
 Statistically principled method of clustering data that defies common probability functions 
 
 
@@ -101,7 +116,7 @@ _What is the distribution of an entire genome or phenome?_
 ![:space 4]
 
 
-.sidenote-bullet[
+.side-bullet[
 A new way of looking at the results of bayesian SBMs
 
 _Previous results either ignored or used summary stats_
@@ -109,7 +124,7 @@ _Previous results either ignored or used summary stats_
 
 ![:space 4]
   
-.sidenote-bullet[
+.side-bullet[
 An easy jumping off point for specialization into more specialized methods
 
 _Polypartite specialization, Time-dependent, ..._

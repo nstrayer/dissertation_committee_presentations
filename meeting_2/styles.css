@@ -51,29 +51,33 @@ h1, h2, h3 {
 }
 
 
-.sidenote-bullet {
+.side-bullet {
     display: grid;
-    grid-template-columns: 3fr 2fr;
     align-items: start;
     --gap-size: 2rem;
+    grid-template-columns: 3fr 2fr;
     grid-column-gap: var(--gap-size);
 }
 
-.sidenote-bullet>p {
+
+.side-bullet>p,
+.side-bullet>h3 {
   display: block;
   position: relative;
 }
 
-.sidenote-bullet>p:first-child {
+
+.side-bullet>p:first-child,
+.side-bullet>h3:first-child {
     text-align: right;
 }
 
-.sidenote-bullet>p:last-child {
+.side-bullet>p:last-child {
     font-size: 0.9em;
     opacity: 0.8;
 }
 
-.sidenote-bullet > p:first-child::after {
+.side-bullet > p:first-child::after {
     content: "-";
     text-align: center;
     font-size: 1.5em;
@@ -86,4 +90,8 @@ h1, h2, h3 {
 }
 
 
+.side-bullet.middle {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
 
