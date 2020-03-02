@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display');
-
 * {
   --link-color: #0075ea;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }
 
 
@@ -181,6 +180,10 @@ a, a > code {
   grid-area: 3 / 2 / 4 / 3;
 }
 
+
+.move-up {
+  margin-top: -20px;
+}
 
 
 .one-to-two  {
