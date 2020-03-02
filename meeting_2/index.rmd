@@ -299,11 +299,12 @@ class: four-square
 
 
 ---
+class: middle
 
 # Timeline
 
-- Timeline plot
 
+![](figs/second_meeting_timeline.png)
 
 
 ---
