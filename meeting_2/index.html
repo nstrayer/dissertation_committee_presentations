@@ -75,25 +75,40 @@ class: center, middle, inverse, title-slide
 # Paper \#2: Consensus SBM: An uncertainty aware network clustering method
 
 
-.pull-left[
+
+.side-bullet.topics[
 ### SBMs
 
 - Cluster network data
 - Flexible in format ({bi, tri, ...}-partite networks)
 - Interpretable
-
 ]
 
-.pull-right[
+
+.side-bullet.topics.nopad[
+### +
+]
+
+.side-bullet.topics[
 ### Consensus Clustering
 
 - Recognizes that many clusterings may fit data
 - Reduce data to pairwise "probability of being in same cluster" distances
 ]
 
+
+
+.side-bullet.topics.nopad[
+### =
+]
+
+
+
+.side-bullet.topics[
 ### C-SBM
 - Use posterior to quickly sample lots of potential partitionings
 - Consensus clustering provides window to view super high-dimensional results
+]
 
 ---
 class: middle, center
@@ -110,7 +125,7 @@ class: middle, center
 ![:space 8]
 
 .side-bullet[
-Statistically principled method of clustering data that defies common probability functions 
+__Statistically principled method of clustering data that defies common probability functions__
 
 
 _What is the distribution of an entire genome or phenome?_
@@ -120,7 +135,7 @@ _What is the distribution of an entire genome or phenome?_
 
 
 .side-bullet[
-A new way of looking at the results of bayesian SBMs
+__A new way of looking at the results of bayesian SBMs__
 
 _Previous results either ignored or used summary stats_
 ]
@@ -128,7 +143,7 @@ _Previous results either ignored or used summary stats_
 ![:space 4]
   
 .side-bullet[
-An easy jumping off point for specialization into more specialized methods
+__An easy jumping off point for specialization into more specialized methods__
 
 _Polypartite specialization, Time-dependent, ..._
 ]
@@ -138,21 +153,39 @@ _Polypartite specialization, Time-dependent, ..._
 
 ## How can it be expanded?
 
-- Polypartite specialization
-  - Placing restrictions on connection behavior can greatly increase the models power to resolve structure
-  - `sbmR` package has functionality in to define complex relationships between node types that I am not aware of other solutions offering
-  - E.g. __Genotype__ `\(\to\)` __Patient__ `\(\leftarrow\)` __Phenotype__ 
+---
+
+.side-bullet.hanging-topics[
+### Polypartite specialization
+
+
+- Placing restrictions on connection behavior can greatly increase the models power to resolve structure
+- `sbmR` package has functionality in to define complex relationships between node types that I am not aware of other solutions offering
+- E.g. __Genotype__ `\(\to\)` __Patient__ `\(\leftarrow\)` __Phenotype__ 
+]
   
-- Multiple edge types
-  - What if the "network" has different edge types? 
-  - E.g. ICD9 counts and protein fold changes
-  - SBM fitting protocols could be modified to deal with this
   
+---
+
+.side-bullet.hanging-topics[
+
+### Multiple edge types
+
+- What if the "network" has different edge types? 
+- E.g. ICD9 counts and protein fold changes
+- SBM fitting protocols could be modified to deal with this
   
-- Time dependence
-  - How to comorbidities or protein pathways change over time?
-  - Clusters remain the same, edge propensities change. 
-  - See [Role Detection in Bicycle-Sharing Networks Using Multilayer Stochastic Block Models](https://arxiv.org/abs/1908.09440) by Carlen Et Al
+]
+
+---
+  
+.side-bullet.topics[
+### Time dependence
+  
+- How to comorbidities or protein pathways change over time?
+- Clusters remain the same, edge propensities change. 
+- See [Role Detection in Bicycle-Sharing Networks Using Multilayer Stochastic Block Models](https://arxiv.org/abs/1908.09440) by Carlen Et Al
+]
   
 
   

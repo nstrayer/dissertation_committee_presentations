@@ -44,6 +44,7 @@ h1, h2, h3 {
   height: 92%;
   float: left;
 }
+
 .right-plot {
   width: 60%;
   float: right;
@@ -55,13 +56,31 @@ h1, h2, h3 {
     display: grid;
     align-items: start;
     --gap-size: 2rem;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2.5fr 2fr;
     grid-column-gap: var(--gap-size);
 }
 
+.side-bullet.middle {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.side-bullet.topics {
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.side-bullet.hanging-topics {
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+
+
 
 .side-bullet>p,
-.side-bullet>h3 {
+.side-bullet>h3,
+.side-bullet>ul,
+{
   display: block;
   position: relative;
 }
@@ -70,28 +89,40 @@ h1, h2, h3 {
 .side-bullet>p:first-child,
 .side-bullet>h3:first-child {
     text-align: right;
+    position: relative;
 }
 
-.side-bullet>p:last-child {
+.side-bullet>p:last-child,
+.side-bullet>ul:last-child{
     font-size: 0.9em;
     opacity: 0.8;
 }
 
 .side-bullet > p:first-child::after {
-    content: "-";
-    text-align: center;
-    font-size: 1.5em;
-    color: grey;
-    width: var(--gap-size);
-    height: 1em;
-    position: absolute;
-    right: -var(--gap-size);
-    top: 0;
+  position: absolute;
+  content: "";
+  --point-size: 5px;
+  height: var(--point-size);
+  width: var(--point-size);
+  right: calc(-1 * var(--gap-size)/2 - var(--point-size)/2 - 2px);
+  top: 10px;
+  background-color: black;
+  border-radius: 50%;
 }
 
-
-.side-bullet.middle {
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+.nopad * {
+  padding-top: 0;
+  padding-bottom:0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
+.center-big {
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
 
