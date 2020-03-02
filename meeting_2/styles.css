@@ -130,7 +130,7 @@ a, a > code {
 .four-square {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5rem repeat(2, 1fr);
+  grid-template-rows: 3rem repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height:100%;
@@ -172,12 +172,14 @@ a, a > code {
 }
 .four-square>*:nth-child(4) {
   grid-area: 3 / 1 / 4 / 2;
-    /*
+  padding-top: 0;
+  /*
   border-right: var(--border-style);
   */
 }
 .four-square>*:nth-child(5) {
   grid-area: 3 / 2 / 4 / 3;
+  padding-top: 0;
 }
 
 
