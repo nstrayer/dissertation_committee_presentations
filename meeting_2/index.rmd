@@ -174,16 +174,28 @@ I am not aware of any other software doing this
 ![tripartite_example]()
   
 ---
-
+class: one-to-two
 
 ### Multiple edge types
 
-- What if the "network" has different edge types? 
-- E.g. ICD9 counts and protein fold changes
-- SBM fitting protocols could be modified to deal with this
-  
+.left-side[
 
-![different_edge_types]()
+![:space 18]
+
+- What if the "network" has different edge types? 
+
+![:space 5]
+
+- E.g. ICD9 counts and protein fold changes
+
+![:space 5]
+
+- SBM fitting protocols could be modified to deal with this
+]
+
+.right-side[
+![:centerPic 65](figs/multi_edge_type_sbm.png)
+]
 
 
 ---

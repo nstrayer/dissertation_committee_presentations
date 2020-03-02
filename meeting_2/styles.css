@@ -182,3 +182,24 @@ a, a > code {
 }
 
 
+
+.one-to-two  {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4.5rem 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: calc(100% - 8rem);
+}
+
+.one-to-two>h1:first-child,
+.one-to-two>h2:first-child,
+.one-to-two>h3:first-child { grid-area: 1 / 1 / 2 / 3; }
+.one-to-two>.left-side  { grid-area: 2 / 1 / 3 / 2; }
+.one-to-two>.right-side {
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+}
+
+
