@@ -23,13 +23,13 @@ class: center, middle, inverse, title-slide
 
 
 
-# Layout
+# Slides Layout
 
 ![:space 4]
 
-.side-bullet.middle[
+.side-bullet.big-left.middle[
 
-### Final paper plan
+Final paper plan
 
 - First paper
 - Second paper
@@ -40,9 +40,9 @@ class: center, middle, inverse, title-slide
 
 ![:space 4]
 
-.side-bullet.middle[
+.side-bullet.big-left.middle[
 
-### After graduation plans
+After graduation plans
 
 
 ]
@@ -50,9 +50,9 @@ class: center, middle, inverse, title-slide
 ![:space 4]
 
 
-.side-bullet.middle[
+.side-bullet.big-left.middle[
 
-### Timeline
+Timeline
 
 
 - The goal
@@ -76,8 +76,8 @@ class: center, middle, inverse, title-slide
 
 
 
-.side-bullet.topics[
-### SBMs
+.side-bullet.big-left.topics[
+SBMs
 
 - Cluster network data
 - Flexible in format ({bi, tri, ...}-partite networks)
@@ -85,11 +85,11 @@ class: center, middle, inverse, title-slide
 ]
 
 
-.side-bullet.topics.nopad[
+.side-bullet.big-left.topics.nopad[
 ### +
 ]
 
-.side-bullet.topics[
+.side-bullet.big-left.topics[
 ### Consensus Clustering
 
 - Recognizes that many clusterings may fit data
@@ -98,13 +98,13 @@ class: center, middle, inverse, title-slide
 
 
 
-.side-bullet.topics.nopad[
+.side-bullet.big-left.topics.nopad[
 ### =
 ]
 
 
 
-.side-bullet.topics[
+.side-bullet.big-left.topics[
 ### C-SBM
 - Use posterior to quickly sample lots of potential partitionings
 - Consensus clustering provides window to view super high-dimensional results
@@ -150,24 +150,34 @@ _Polypartite specialization, Time-dependent, ..._
 
 
 ---
+class: center, middle
 
-## How can it be expanded?
+# How can it be expanded?
 
 ---
 
-.side-bullet.hanging-topics[
 ### Polypartite specialization
 
+.side-bullet[
+Place restrictions on potential connections
 
-- Placing restrictions on connection behavior can greatly increase the models power to resolve structure
-- `sbmR` package has functionality in to define complex relationships between node types that I am not aware of other solutions offering
-- E.g. __Genotype__ `\(\to\)` __Patient__ `\(\leftarrow\)` __Phenotype__ 
+Can greatly increase the models power to resolve structure
 ]
-  
+
+.side-bullet[
+`sbmR` package allows defining complex relationships between nodes
+
+I am not aware of any other software doing this
+]
+
+![:space 4]
+
+.center-big[E.g. __Genotype__ - __Patient__ - __Phenotype__]
+
+![tripartite_example]()
   
 ---
 
-.side-bullet.hanging-topics[
 
 ### Multiple edge types
 
@@ -175,22 +185,24 @@ _Polypartite specialization, Time-dependent, ..._
 - E.g. ICD9 counts and protein fold changes
 - SBM fitting protocols could be modified to deal with this
   
-]
+
+![different_edge_types]()
+
 
 ---
   
-.side-bullet.topics[
 ### Time dependence
   
-- How to comorbidities or protein pathways change over time?
+- How do comorbidities or protein pathways change over time?
 - Clusters remain the same, edge propensities change. 
 - See [Role Detection in Bicycle-Sharing Networks Using Multilayer Stochastic Block Models](https://arxiv.org/abs/1908.09440) by Carlen Et Al
-]
-  
 
+  
+![time_dependent_sbm]()
   
 
 ---
+class: middle 
 
 ## Potential journals
 
@@ -205,33 +217,64 @@ _Polypartite specialization, Time-dependent, ..._
 
 # Paper \# 3: sbmR: An R package for fast and robust fitting and investigating SBM models in R.
 
-- Package Website Screenshot
+![sbmr_site]()
 
 ---
 
-## Effort report
+## Effort report (by the numbers)
 
-- [1,100+ commits](https://github.com/nstrayer/sbmR/commits/master)
-- 842 Unit tests
-  - [171 R tests](https://github.com/nstrayer/sbmR/tree/master/tests/testthat)
-  - [671 C++ tests](https://github.com/nstrayer/sbmR/tree/master/src/cpp_tests)
-- [33 fully documented functions](http://nickstrayer.me/sbmR/reference/index.html)
-- [1 package website](http://nickstrayer.me/sbmR)
-- 2 invited conference presentations
+.side-bullet.big-left.middle[
+1,100+
+
+[Git commits](https://github.com/nstrayer/sbmR/commits/master)
+]
+
+.side-bullet.big-left.middle[
+842
+
+Unit tests ([171 R tests](https://github.com/nstrayer/sbmR/tree/master/tests/testthat), [671 C++ tests](https://github.com/nstrayer/sbmR/tree/master/src/cpp_tests))
+
+]
+
+
+.side-bullet.big-left.middle[
+33
+
+[Fully documented functions](http://nickstrayer.me/sbmR/reference/index.html)
+]
+
+.side-bullet.big-left.middle[
+2
+
+Invited conference presentations
+]
+
+
+.side-bullet.big-left.middle[
+### 1
+
+[Package website](http://nickstrayer.me/sbmR)
+]
+
+
 
 
 ---
 
 ## Features beyond consensus SBMs
 
-.pull-left[
-#### [New more efficient agglomerative merging technique](http://nickstrayer.me/sbmR/articles/agglomerative_merging.html)
+
+.side-bullet.big-left.middle[
+[New more efficient agglomerative merging technique](http://nickstrayer.me/sbmR/articles/agglomerative_merging.html)
+
 - Cuts runtime of original algorithm down by roughly a factor of `N`
 - Demos of superior performance in package vignettes
 ]
 
-.pull-right[
-#### Advanced node and edge type specification
+
+.side-bullet.big-left.middle[
+[Advanced node and edge type specification](http://nickstrayer.me/sbmR/reference/new_sbm_network.html#examples)
+
 - No other package that I am aware of does this
 - Enables semi-supervised approaches etc. 
 ]
@@ -239,6 +282,7 @@ _Polypartite specialization, Time-dependent, ..._
 
 
 ---
+class: middle
 
 ## Potential journals
 
@@ -246,25 +290,16 @@ _Polypartite specialization, Time-dependent, ..._
 - Bioinfomatics (application note)
 
 ---
+class: four-square
 
 # After graduation plans
 
-.pull-left[
-## Hopkins Postdoc
-]
 
-.pull-right[
-## Hopkins Data Scientist
-]
+### Hopkins Postdoc
+### Hopkins Data Scientist
+### LA Times Data Scientist
+### Other places to consider?
 
-
-.pull-left[
-## LA Times Data Scientist
-]
-
-.pull-right[
-## Other places to consider?
-]
 
 ---
 
@@ -288,8 +323,9 @@ _Polypartite specialization, Time-dependent, ..._
 ---
 # Why this timeline
 
-- Sarah graduation timeline
+- My wife is targeting the same time
 - Job opening/acceptance times
+- I've been here a while...
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
