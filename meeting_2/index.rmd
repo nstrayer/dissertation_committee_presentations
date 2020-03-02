@@ -161,7 +161,7 @@ Place restrictions on potential connections
 Can greatly increase the models power to resolve structure
 ]
 
-.side-bullet[
+.side-bullet.move-up[
 `sbmR` package allows defining complex relationships between nodes
 
 I am not aware of any other software doing this
@@ -169,9 +169,8 @@ I am not aware of any other software doing this
 
 ![:space 4]
 
-.center-big[E.g. __Genotype__ - __Patient__ - __Phenotype__]
 
-![tripartite_example]()
+![:centerPic 60](figs/tripartite_sbm.png)
   
 ---
 class: one-to-two
