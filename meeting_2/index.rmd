@@ -59,9 +59,14 @@ Timeline
 ]
 
 ---
+class: middle
+
+# The Papers
+
+---
 class: four-square
 
-# Paper \#1: Phewas ME (Submitted to Bioinformatics)
+## Paper \#1: Phewas ME (Submitted to Bioinformatics)
 
 ![:centerPic 60](figs/phewasme_paper.png)
 
@@ -73,7 +78,7 @@ class: four-square
 
 ---
 
-# Paper \#2: Consensus SBM: An uncertainty-aware network clustering method
+## Paper \#2: Consensus SBM: An uncertainty-aware network clustering method
 
 
 
@@ -93,7 +98,7 @@ SBMs
 .side-bullet.big-left.topics[
 ### Consensus Clustering
 
-- Recognizes that many clusterings may fit data
+- Recognizes that many partitions may fit data
 - Reduce data to pairwise "probability of being in same cluster" distances
 ]
 
@@ -107,7 +112,7 @@ SBMs
 
 .side-bullet.big-left.topics[
 ### C-SBM
-- Use posterior to quickly sample lots of potential partitionings
+- Use posterior to quickly sample lots of potential partitions
 - Consensus clustering provides window to view super high-dimensional results
 ]
 
@@ -153,11 +158,11 @@ _Polypartite specialization, Time-dependent, ..._
 ---
 class: center, middle
 
-# How can it be expanded?
+## How can it be expanded?
 
 ---
 
-### Polypartite specialization
+## Polypartite specialization
 
 .side-bullet[
 Place restrictions on potential connections
@@ -179,7 +184,7 @@ _I am not aware of any other software doing this_
 ---
 class: one-to-two
 
-### Multiple edge types
+## Multiple edge types
 
 .left-side[
 
@@ -203,15 +208,17 @@ class: one-to-two
 
 ---
   
-### Time dependence
+## Time dependence
   
+![:space 1]
+
 - How do comorbidities or protein pathways change over time?
 - Clusters remain the same, edge propensities change. 
 - See [Role Detection in Bicycle-Sharing Networks Using Multilayer Stochastic Block Models](https://arxiv.org/abs/1908.09440) by Carlen Et Al
 
-![:space 5]
+![:space 8]
 
-![:centerPic 85](figs/time_dependent_sbm.png)
+![:centerPic 90](figs/time_dependent_sbm.png)
   
 
 ---
@@ -264,7 +271,7 @@ Invited conference presentations
 
 
 .side-bullet.big-left.middle[
-### 1
+1
 
 [Package website](http://nickstrayer.me/sbmR)
 ]
@@ -278,19 +285,21 @@ Invited conference presentations
 
 ![:space 13]
 
-.side-bullet.big-left.middle[
+.side-bullet.middle[
 [New more efficient agglomerative merging technique](http://nickstrayer.me/sbmR/articles/agglomerative_merging.html)
 
 - Cuts runtime of original algorithm down by roughly a factor of `N`
 - Demos of superior performance in package vignettes
+- Used to initialize MCMC Chains or on own
 ]
 
 ![:space 10]
 
 
-.side-bullet.big-left.middle[
+.side-bullet.middle[
 [Advanced node and edge type specification](http://nickstrayer.me/sbmR/reference/new_sbm_network.html#examples)
 
+- Specify node types _and_ allowed connections
 - No other package that I am aware of does this
 - Enables semi-supervised approaches etc. 
 ]
@@ -327,7 +336,7 @@ class: middle
 
 
 ---
-# Potential challenges
+## Potential challenges
 
 ![:space 8]
 
@@ -346,7 +355,7 @@ class: middle
 
 
 ---
-# Why this timeline
+## Why this timeline
 
 ![:space 8]
 
